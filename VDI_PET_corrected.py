@@ -27,7 +27,7 @@ sex = 1
 pos = 1
 age = 35
 mbody = 75 # Subject weight[kg]
-ht = 1.80 # Subject size[m]
+ht = 1.75 # Subject size[m]
 Adu = 0.203*math.pow(mbody, 0.425)*math.pow(ht,0.725) #Dubois body area
 bodyPosition="standing"
 feff = 0.725
@@ -390,4 +390,5 @@ tc, tsk, tcl, esw_real = system(Tair, Tmrt, pvap, v_air, M_activity, icl)
 tsk, enbal, esw, ed, PET, tcl = pet(tc,tsk,tcl,Tair, esw_real)
 
 print("PET value", round(PET,2))
+
 print("Tc ", round(tc,2)," / Tsk ", round(tsk,2)," / Tcl ", round(tcl,2))
